@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bright Films | Jonah Victor Emmanuel</title>
+<meta name="description" content="Bright Films: cinematography and visual storytelling by Jonah Victor Emmanuel, Lagos, Nigeria.">
+<meta property="og:title" content="Bright Films">
+<meta property="og:description" content="Cinematography and visual storytelling from Lagos, Nigeria.">
+<style>
+  :root{
+    --bg:#f1e8d8; --card:#e7dbc4; --text:#141211; --muted:#6b6258; --accent:#7a1f2b; --line:#d3c5aa;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;background:rgba(241,232,216,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+  .logo{font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+  .logo span{color:var(--accent)}
+  nav ul{display:flex;gap:18px;list-style:none;font-size:14px;color:var(--muted)}
+  nav a:hover{color:var(--accent)}
+  header.hero{padding:72px 0 48px}
+  .eyebrow{color:var(--accent);font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+  h1{font-size:clamp(2.2rem,8vw,4.2rem);line-height:1.05;margin:12px 0 16px;font-weight:800}
+  .lead{color:var(--muted);max-width:560px;font-size:1.05rem}
+  .btns{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{padding:12px 22px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid var(--accent)}
+  .btn.primary{background:var(--accent);color:#f1e8d8}
+  header.hero{background:#141211;color:#f1e8d8}
+  header.hero .eyebrow{color:#c9a27a}
+  header.hero .lead{color:#c9bfae}
+  header.hero .btn{border-color:#f1e8d8}
+  header.hero .btn.primary{background:#f1e8d8;color:#141211}
+  header.hero .btn:hover{background:#7a1f2b;border-color:#7a1f2b;color:#f1e8d8}
+  section{padding:48px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.6rem;margin-bottom:6px}
+  .sub{color:var(--muted);margin-bottom:24px}
+  .video{position:relative;aspect-ratio:16/9;background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .video video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--muted);text-align:center;padding:20px;font-size:14px}
+  .placeholder b{color:var(--accent)}
+  .caption{margin-top:12px;color:var(--muted);font-size:14px}
+  .films{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .about{display:grid;gap:24px}
+  @media(min-width:760px){.about{grid-template-columns:1.3fr 1fr}}
+  .skills{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+  .skills li{padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--muted)}
+  .contact a.row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line)}
+  .contact a.row:hover{color:var(--accent)}
+  footer{padding:32px 0;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Bright<span>Films</span></a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">Cinematographer · Lagos, Nigeria</p>
+    <h1>Real faces.<br>Real places.<br>Told in light.</h1>
+    <p class="lead">I'm Jonah Victor Emmanuel. I shoot documentary and street-level visual stories that give everyday Nigerian life a cinematic voice.</p>
+    <div class="btns">
+      <a class="btn primary" href="#work">Watch my work</a>
+      <a class="btn" href="#contact">Hire me</a>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected Films</h2>
+    <p class="sub">Short documentary work</p>
+
+    <div class="films">
+
+      <div class="film">
+        <div class="video">
+          <video controls playsinline preload="metadata" poster="images/faces-of-the-market.jpg">
+            <source src="videos/faces-of-the-market.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p class="caption"><strong>Faces of the Market.</strong> A short film capturing the people and energy of Oye market.</p>
+      </div>
+
+      <div class="film">
+        <div class="video">
+          <video controls playsinline preload="metadata" poster="images/campus-chronicles.jpg">
+            <source src="videos/campus-chronicles.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p class="caption"><strong>Campus Chronicles.</strong> Everyday campus life, told through the voices of students.</p>
+      </div>
+
+      <div class="film">
+        <div class="video">
+          <video controls playsinline preload="metadata" poster="images/late-hour-at-campus.jpg">
+            <source src="videos/late-hour-at-campus.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p class="caption"><strong>Late Hour at Campus.</strong> Campus moments after the day slows down.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About</h2>
+      <p class="sub">Storyteller. Fast learner. Team builder.</p>
+      <p>My work is shaped by attention to context, people and the stories behind a place. I bring cinematography and digital marketing together so work looks good and reaches an audience.</p>
+    </div>
+    <div>
+      <h2 style="font-size:1.1rem;margin-bottom:12px">What I do</h2>
+      <ul class="skills">
+        <li>Cinematography</li>
+        <li>Documentary</li>
+        <li>Digital marketing</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <h2>Let's work together</h2>
+    <p class="sub">Available for shoots, edits and collaborations.</p>
+    <a class="row" href="mailto:jonahv482@gmail.com"><span>Email</span><span>jonahv482@gmail.com</span></a>
+    <a class="row" href="https://www.tiktok.com/@bright_filmss" target="_blank" rel="noopener"><span>TikTok</span><span>@bright_filmss</span></a>
+    <a class="row" href="https://x.com/brightdiaryy" target="_blank" rel="noopener"><span>X (Twitter)</span><span>@brightdiaryy</span></a>
+    <a class="row" href="tel:+2347086703713"><span>Phone / WhatsApp</span><span>+234 708 670 3713</span></a>
+  </div>
+</section>
+
+<footer>© 2026 Bright Films · Jonah Victor Emmanuel · Lagos, Nigeria</footer>
+
+</body>
+</html>
