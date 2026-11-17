@@ -29,8 +29,8 @@
   section{padding:48px 0;border-top:1px solid var(--line)}
   h2{font-size:1.6rem;margin-bottom:6px}
   .sub{color:var(--muted);margin-bottom:24px}
-  .films{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-  .film .thumb{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+  .films{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
+  .film .thumb{position:relative;aspect-ratio:16/9;max-width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
   .film img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
   .film:hover img{transform:scale(1.04)}
   .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
@@ -38,11 +38,14 @@
   .play span::after{content:"";margin-left:5px;border-left:18px solid #f1e8d8;border-top:11px solid transparent;border-bottom:11px solid transparent}
   .caption{margin-top:12px;color:var(--muted);font-size:14px}
   .caption strong{color:var(--text)}
+  .tags{margin-top:4px;color:var(--accent);font-size:13px;font-weight:600}
   .about{display:grid;gap:24px}
   @media(min-width:760px){.about{grid-template-columns:1.3fr 1fr}}
+  .about>div{min-width:0}
   .skills{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
   .skills li{padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--muted)}
-  .contact a.row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line)}
+  .contact a.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .contact a.row span{min-width:0;overflow-wrap:anywhere}
   .contact a.row:hover{color:var(--accent)}
   footer{padding:32px 0;color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--line)}
 </style>
@@ -53,9 +56,9 @@
   <div class="wrap">
     <a class="logo" href="#top">Bright<span>Films</span></a>
     <ul>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#work">Visuals</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">Book Me</a></li>
     </ul>
   </div>
 </nav>
@@ -74,32 +77,62 @@
 
 <section id="work">
   <div class="wrap">
-    <h2>Selected Films</h2>
-    <p class="sub">Tap a film to watch it on TikTok</p>
+    <h2>Visuals</h2>
+    <p class="sub">Selected Frames &amp; short films</p>
     <div class="films">
 
-      <a class="film" href="https://vt.tiktok.com/ZSpspNb7F/" target="_blank" rel="noopener">
+      <a class="film" href="https://vt.tiktok.com/ZSptQBvY7/" target="_blank" rel="noopener">
         <div class="thumb">
           <img src="IMG_2265.jpeg" alt="Faces of the Market" loading="lazy">
           <div class="play"><span></span></div>
         </div>
-        <p class="caption"><strong>Faces of the Market.</strong> A short film capturing the people and energy of Oye market.</p>
+        <p class="caption"><strong>Faces of the Market.</strong> Real people. Real hustle. Real life. I walked through the market and filmed it just as it was.</p>
+        <p class="tags">#Documentary #StreetCinematography</p>
       </a>
 
-      <a class="film" href="https://vt.tiktok.com/ZSpspYUrh/" target="_blank" rel="noopener">
+      <a class="film" href="https://vt.tiktok.com/ZSptQDJjM/" target="_blank" rel="noopener">
         <div class="thumb">
           <img src="IMG_2266.jpeg" alt="Campus Chronicles" loading="lazy">
           <div class="play"><span></span></div>
         </div>
-        <p class="caption"><strong>Campus Chronicles.</strong> Everyday campus life, told through the voices of students.</p>
+        <p class="caption"><strong>Campus Chronicles.</strong> Beautiful faces, on their way to lectures. This is campus life in its purest form.</p>
+        <p class="tags">#CampusChronicles #StudentLife</p>
       </a>
 
-      <a class="film" href="https://vt.tiktok.com/ZSpspeT5V/" target="_blank" rel="noopener">
+      <a class="film" href="https://vt.tiktok.com/ZSptQuwds/" target="_blank" rel="noopener">
         <div class="thumb">
-          <img src="IMG_2267.jpeg" alt="Late Hour at Campus" loading="lazy">
+          <img src="IMG_2279.jpeg" alt="Students Daily Life" loading="lazy">
           <div class="play"><span></span></div>
         </div>
-        <p class="caption"><strong>Late Hour at Campus.</strong> Campus moments after the day slows down.</p>
+        <p class="caption"><strong>Students Daily Life.</strong> A quiet afternoon on campus. Lectures going on, life going on. Just admiring the beauty of it all.</p>
+        <p class="tags">#CampusLife #DailyLife</p>
+      </a>
+
+      <a class="film" href="https://vt.tiktok.com/ZSptQxtx6/" target="_blank" rel="noopener">
+        <div class="thumb">
+          <img src="IMG_2278.jpeg" alt="Street Cinematography" loading="lazy">
+          <div class="play"><span></span></div>
+        </div>
+        <p class="caption"><strong>Street Cinematography.</strong> A walk through the streets. A farmer, beautiful faces, real stories. Nothing staged, just life.</p>
+        <p class="tags">#StreetCinematography #Visuals</p>
+      </a>
+
+      <a class="film" href="https://vt.tiktok.com/ZSptQAeES/" target="_blank" rel="noopener">
+        <div class="thumb">
+          <img src="IMG_2284.jpeg" alt="Late Hours on Campus" loading="lazy">
+          <div class="play"><span></span></div>
+        </div>
+        <p class="caption"><strong>Late Hours on Campus.</strong> Heading back to campus late in the day, when everywhere is quiet and calm. Peaceful moments, beautifully captured.</p>
+        <p class="tags">#CampusLife #Cinematic</p>
+      </a>
+
+      <a class="film" href="https://vt.tiktok.com/ZSptQMymb/" target="_blank" rel="noopener">
+        <div class="thumb">
+          <img src="IMG_2267.jpeg" alt="Students Lives" loading="lazy">
+          <div class="play"><span></span></div>
+        </div>
+        <p class="caption"><strong>Students Lives.</strong> The faces that make campus beautiful. Everyday moments, captured honestly.</p>
+        <p class="tags">#StudentsLives #CampusVibes</p>
       </a>
 
     </div>
@@ -109,12 +142,12 @@
 <section id="about">
   <div class="wrap about">
     <div>
-      <h2>About</h2>
+      <h2>About me</h2>
       <p class="sub">Storyteller. Fast learner. Team builder.</p>
-      <p>My work is shaped by attention to context, people and the stories behind a place. I bring cinematography and digital marketing together so work looks good and reaches an audience.</p>
+      <p>Every moment deserves to be remembered beautifully. Through my lens, I create visuals that are impactful, timeless, and impossible to forget.</p>
     </div>
     <div>
-      <h2 style="font-size:1.1rem;margin-bottom:12px">What I do</h2>
+      <h2 style="font-size:1.1rem;margin-bottom:12px">Services</h2>
       <ul class="skills">
         <li>Cinematography</li>
         <li>Documentary</li>
@@ -126,7 +159,7 @@
 
 <section id="contact">
   <div class="wrap contact">
-    <h2>Let's work together</h2>
+    <h2>Book Me</h2>
     <p class="sub">Available for shoots, edits and collaborations.</p>
     <a class="row" href="mailto:jonahv482@gmail.com"><span>Email</span><span>jonahv482@gmail.com</span></a>
     <a class="row" href="https://www.tiktok.com/@bright_filmss" target="_blank" rel="noopener"><span>TikTok</span><span>@bright_filmss</span></a>
@@ -135,7 +168,8 @@
   </div>
 </section>
 
-<footer>© 2026 Bright Films · Jonah Victor Emmanuel · Lagos, Nigeria</footer>
+<footer>© 2027 Bright Films · Jonah Victor Emmanuel · Lagos, Nigeria</footer>
 
 </body>
 </html>
+
